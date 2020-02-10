@@ -2,13 +2,16 @@
   <Layout>
     <h1>Phillip Kent Knight</h1>
     <ul>
+      <li>Advocacy Technologist</li>
       <li>Campaigner</li>
       <li>Developer</li>
       <li>Product Manager</li>
     </ul>
     <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://twitter.com/phillipkent" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://linkedin.com/in/phillipkentknight" target="_blank" rel="noopener">Linkedin</a>
+      <a href="https://instagram.com/phillipkent" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://dev.to/phillipkent" target="_blank" rel="noopener">Dev Community</a>
     </p>
   </Layout>
 </template>
