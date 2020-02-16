@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <HeaderComponent></HeaderComponent>
-    <slot />
+    <div class="container">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -70,6 +72,11 @@ a {
 }
 .layout {
   margin: 0;
+}
+
+div.container p, div.container h1, div.container h2  {
+  margin-left:1rem;
+  margin-right:1rem;
 }
 
 img {

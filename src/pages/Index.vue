@@ -1,9 +1,13 @@
 <template>
   <Layout>
-    <h1>Phillip Kent Knight</h1>
+    <div class="center-flex">
+      <h1>Hi, I'm Phil!</h1>
+
+      <p>I'm a technologist focused on campaigns</p>
+    </div>
     <ul>
-      <li>Advocacy Technologist</li>
-      <li>Campaigner</li>
+      <li>👨‍💻 Advocacy Technologist</li>
+      <li>📣 Campaigner</li>
       <li>Developer</li>
       <li>Product Manager</li>
     </ul>
@@ -27,5 +31,14 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 </style>
