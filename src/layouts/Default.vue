@@ -1,7 +1,15 @@
 <template>
   <div class="layout">
-    <HeaderComponent></HeaderComponent>
-    <slot />
+    <header class="header">
+      <strong>
+        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+      </strong>
+      <nav class="nav">
+        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link class="nav__link" to="/about/">About</g-link>
+      </nav>
+    </header>
+    <slot/>
   </div>
 </template>
 
@@ -12,15 +20,6 @@ query {
   }
 }
 </static-query>
-<script>
-import HeaderComponent from "~/components/HeaderComponent.vue";
-
-export default {
-  components: {
-    HeaderComponent
-  }
-};
-</script>
 
 <style>
 body {
