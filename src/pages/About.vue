@@ -15,7 +15,7 @@
       has been different, but my ambition and determination have always been the same: I’m motivated by moving
       the needle- seeing measurable change in a sometimes troubling world.
     </p>
-    <p>
+    <p style="height:100rem;">
       I currently help campaigns and nonprofit organizations build and manage online technolgy, with a focus
       on connecting people with their leaders around the world. My past experience includes front-line field
       organizing, traditional communications, digital strategy, and a lifetime of nerding out with technology.

@@ -1,11 +1,10 @@
 <template>
- 
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <top-navigation></top-navigation>     
-    </header>
+  <header class="header">
+    <strong>
+      <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+    </strong>
+    <top-navigation></top-navigation>
+  </header>
 </template>
 
 <static-query>
@@ -16,7 +15,6 @@ query {
 }
 </static-query>
 <script>
-
 import TopNavigation from "~/components/TopNavigation.vue";
 
 export default {
@@ -24,7 +22,6 @@ export default {
     TopNavigation
   }
 };
-
 </script>
 <style>
 .header {
@@ -43,8 +40,4 @@ export default {
   text-decoration: none;
   text-transform: lowercase;
 }
-
-
-
-
 </style>

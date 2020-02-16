@@ -1,22 +1,39 @@
 <template>
   <Layout>
-    <div class="center-flex">
-      <h1>Hi, I'm Phil!</h1>
+    <section class="center-flex half-screen">
+      <h1 class="heading" id="namespace">Hi, I'm Phil!</h1>
+      <p class="intro-text">I'm a campaigner turned technologist; I build and manage platforms, products, and projects with purpose.</p>
+    </section>
 
-      <p>I'm a technologist focused on campaigns</p>
-    </div>
-    <ul>
-      <li>👨‍💻 Advocacy Technologist</li>
-      <li>📣 Campaigner</li>
-      <li>Developer</li>
-      <li>Product Manager</li>
-    </ul>
-    <p class="home-links">
-      <a href="https://twitter.com/phillipkent" target="_blank" rel="noopener">Twitter</a>
-      <a href="https://linkedin.com/in/phillipkentknight" target="_blank" rel="noopener">Linkedin</a>
-      <a href="https://instagram.com/phillipkent" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://dev.to/phillipkent" target="_blank" rel="noopener">Dev Community</a>
-    </p>
+    <section class="quick-links">
+      <ul>
+        <li>
+          <a href="https://twitter.com/phillipkent" target="_blank" rel="noopener">Twitter</a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/phillipkentknight"
+            target="_blank"
+            rel="noopener"
+          >Linkedin</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/phillipkent" target="_blank" rel="noopener">Instagram</a>
+        </li>
+        <li>
+          <a href="https://dev.to/phillipkent" target="_blank" rel="noopener">Dev Community</a>
+        </li>
+      </ul>
+    </section>
+    <section class="half-screen">
+      <ul>
+        <li>Advocacy Technologist</li>
+        <li>📣 Campaigner</li>
+        <li>Developer</li>
+        <li>Product Manager</li>
+      </ul>
+
+    </section>
   </Layout>
 </template>
 
@@ -29,9 +46,6 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 
 
 .center-flex {
@@ -39,6 +53,17 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
 
+.half-screen {
+  height: calc(50vh - 3em);
+}
+
+.heading {
+  margin-bottom: 0;
+}
+
+.intro-text {
+  text-align: center;
 }
 </style>
