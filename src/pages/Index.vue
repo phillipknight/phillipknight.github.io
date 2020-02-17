@@ -131,5 +131,6 @@ export default {
 
 .footer {
   background: var(--primary-color);
+  text-align: center;
 }
 </style>
