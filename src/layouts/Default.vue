@@ -19,6 +19,11 @@ query {
 </script>
 <style>
 body {
+  --primary-color:var(--orange);
+  --primary-body-color:black;
+  --primary-background-color:white;
+  --secondary-body-color:white;
+  --secondary-background-color: var(--orange);
   --dark-grey: #353535;
   --orange: #ff7e00;
   --opaque-bg: #ffffffcc;
@@ -42,6 +47,7 @@ body {
 }
 
 body[data-theme="dark"] {
+  --primary-color:var(--dark-grey);
   --opaque-bg: #0000009c;
   --header-bg: var(--dark-grey);
   --header-link-color: white;
