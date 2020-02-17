@@ -24,6 +24,7 @@ body {
   --primary-background-color:white;
   --secondary-body-color:white;
   --secondary-background-color: var(--orange);
+  --secondary-color:var(--dark-grey);
   --dark-grey: #353535;
   --orange: #ff7e00;
   --opaque-bg: #ffffffcc;
