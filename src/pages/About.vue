@@ -28,7 +28,7 @@
       <div class="about-technology">
         <div>
           <h3>Code Experience</h3>
-          <ul class="about-code-list">
+          <ul class="about-list">
             <li>HTML/CSS</li>
             <li>Javascript</li>
             <li>Vue.js</li>
@@ -36,12 +36,13 @@
             <li>Liquid Markup</li>
             <li>Python</li>
             <li>Django Template Language</li>
+            <li>API Integrations</li>
           </ul>
         </div>
 
         <div>
           <h3>Platform Experience</h3>
-          <ul class="about-platforms-list">
+          <ul class="about-list">
             <li>ActionKit</li>
             <li>NationBuilder</li>
             <li>NGP/VAN</li>
@@ -54,26 +55,36 @@
             <li>Google Analytics</li>
           </ul>
         </div>
+        <div>
+          <h3>Campaign Experience</h3>
+          <ul class="about-list">
+            <li>US Senate</li>
+            <li>State Legislatures</li>
+            <li>Municipal & Local</li>
+            <li>Grassroots Organizing</li>
+            <li>Gender Equality</li>
+            <li>Global Poverty</li>
+            <li>International Development</li>
+          </ul>
+        </div>
       </div>
-
-     <g-image
-        src="~/images/clientcon-crop.jpg"
-        alt="photo of the very dashing Phillip Kent Knight"
-        width="350"
-        fit="cover"
-      />
-
+      <div>
+      <!--  <g-image
+          src="~/images/clientcon-crop.jpg"
+          alt="photo of the very dashing Phillip Kent Knight"
+          width="350"
+          fit="cover"
+        /> -->
+      </div>
     </section>
-    <section>
-
-    </section>
+    <section></section>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "About us"
+    title: "About me"
   }
 };
 </script>
@@ -90,35 +101,35 @@ export default {
 .about-technology-section {
   background-color: var(--secondary-color);
   color: white;
-  padding: 1rem;
+
 }
 
 .about-technology {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   text-align: center;
-}
-.about-platforms-list {
-  list-style: none;
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
 }
 
-.about-code-list {
-  list-style: none;
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
+
+.about-list {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
 }
-.about-code-list li,.about-platforms-list li {
-  padding:0.25rem;
+
+.about-list li {
+    padding: 0 0.5rem;
+}
+
+.about-code-list li,
+.about-platforms-list li {
+  padding: 0.25rem;
 }
 </style>
