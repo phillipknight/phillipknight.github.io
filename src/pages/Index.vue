@@ -45,7 +45,6 @@
       </div>
     </section>
     <footer class="footer">
-      <small>2020 Phillip Kent Knight - all rights actually owned are reserved</small>
     </footer>
     
   </Layout>
@@ -129,8 +128,5 @@ export default {
     height: 100%;
 }
 
-.footer {
-  background: var(--primary-color);
-  text-align: center;
-}
+
 </style>
