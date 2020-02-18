@@ -23,28 +23,49 @@
         </p>
       </div>
     </section>
-    <svg class="svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="var(--dark-grey)"
-        fill-opacity="1"
-        d="M0,128L0,0L205.7,0L205.7,96L411.4,96L411.4,288L617.1,288L617.1,128L822.9,128L822.9,32L1028.6,32L1028.6,256L1234.3,256L1234.3,32L1440,32L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"
-      />
-    </svg>
+
     <section class="about-technology-section">
       <div class="about-technology">
-        <h3>Platforms</h3>
-        <ul class="about-platforms-list">
-          <li>ActionKit</li>
-          <li>NationBuilder</li>
-          <li>NGP VAN</li>
-          <li>New/Mode</li>
-          <li>Phone2Action</li>
-          <li>Joomla!</li>
-          <li>WordPress</li>
-          <li>CiviCRM</li>
-          <li>Google Analytics</li>
-        </ul>
+        <div>
+          <h3>Code Experience</h3>
+          <ul class="about-code-list">
+            <li>HTML/CSS</li>
+            <li>Javascript</li>
+            <li>Vue.js</li>
+            <li>Gridsome</li>
+            <li>Liquid Markup</li>
+            <li>Python</li>
+            <li>Django Template Language</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Platform Experience</h3>
+          <ul class="about-platforms-list">
+            <li>ActionKit</li>
+            <li>NationBuilder</li>
+            <li>NGP/VAN</li>
+            <li>EveryAction</li>
+            <li>New/Mode</li>
+            <li>Phone2Action</li>
+            <li>WordPress</li>
+            <li>Joomla!</li>
+            <li>CiviCRM</li>
+            <li>Google Analytics</li>
+          </ul>
+        </div>
       </div>
+
+     <g-image
+        src="~/images/clientcon-crop.jpg"
+        alt="photo of the very dashing Phillip Kent Knight"
+        width="350"
+        fit="cover"
+      />
+
+    </section>
+    <section>
+
     </section>
   </Layout>
 </template>
@@ -63,6 +84,7 @@ export default {
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 1.5rem;
 }
 
 .about-technology-section {
@@ -70,15 +92,33 @@ export default {
   color: white;
   padding: 1rem;
 }
+
+.about-technology {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
 .about-platforms-list {
   list-style: none;
   list-style-type: none;
+  padding: 0;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
-.svg-divider {
-  margin-bottom:-8px;
+.about-code-list {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.about-code-list li,.about-platforms-list li {
+  padding:0.25rem;
 }
 </style>
