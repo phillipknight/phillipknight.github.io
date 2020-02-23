@@ -71,13 +71,16 @@
     </section>
 
     <section>
-      <h2>Notable Accomplishments</h2>
-      <ul>
-        <li>Built first known single-page NationBuilder site.</li>
-        <li>Bartered with Union bosses for phone bank time.</li>
-        <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
-        <li>Was once contracted with express goal of annoying a US Senator.</li>
-      </ul>
+      <div class="accomplishments">
+        <h2>Some Notable Accomplishments</h2>
+        <ul class="accomplishments__list">
+          <li>Built first known single-page NationBuilder site.</li>
+          <li>Bartered with Union bosses for phone bank time.</li>
+          <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
+          <li>Was once contracted with express goal of annoying a US Senator.</li>
+        </ul>
+      </div>
+
       <!--
       <g-image
         src="~/images/clientcon-crop.jpg"
@@ -104,7 +107,6 @@ export default {
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 1.5rem;
 }
 
 .about-technology {
@@ -113,10 +115,10 @@ export default {
   text-align: center;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
-  height:fit-content;
+  height: fit-content;
   align-items: center;
+  margin: 3rem 0;
 }
-
 
 .card {
   border: 1px solid var(--dark-only-border);
@@ -138,12 +140,22 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   width: 400px;
-  background-color:var(--three-two);
-  color:white;
+  background-color: var(--three-two);
 }
-
 
 .card__list li {
   padding: 0 0.5rem;
+}
+
+.accomplishments {
+  display: flex;
+  justify-content: center;
+
+}
+
+.accomplishments__list {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 </style>

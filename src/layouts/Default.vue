@@ -26,32 +26,7 @@ query {
 
 /* default mode body styles */
 body {
-  --first-color: #ff7e00;
-  --second-color: black;
-  --third-color: #353535;
-  --one-two: var(--first-color);
-  --one-three: var(--first-color);
-  --two-one: var(--second-color);
-  --two-three: var(--second-color);
-  --three-one: var(--third-color);
-  --three-two: var(--third-color);
-  --primary-color: var(--orange);
-  --primary-body-color: black;
-  --primary-background-color: white;
-  --secondary-body-color: white;
-  --secondary-background-color: var(--orange);
-  --secondary-color: var(--dark-grey);
-  --dark-grey: #353535;
-  --orange: #ff7e00;
-  --opaque-bg: #ffffffcc;
-  --header-bg: var(--orange);
-  --header-link-color: white;
-  --header-hover: black;
-  --nav-bottom: var(--header-bg);
-  --nav-bottom-hover: black;
-  --body-bg: white;
-  --body-copy: black;
-  --link: var(--orange);
+
 
   font-family: sans-serif;
   margin: 0;
@@ -63,22 +38,7 @@ body {
 /* dark mode */
 body[data-theme="dark"] {
   --one-two: var(--second-color);
-  --one-three: var(--third-color);
-  --two-one: var(--first-color);
-  --two-three: var(--third-color);
-  --three-one: var(--first-color);
-  --three-two: var(--second-color);
-  --dark-only-border: var(--third-color);
-  --primary-color: var(--dark-grey);
-  --opaque-bg: #0000009c;
-  --header-bg: var(--dark-grey);
-  --header-link-color: white;
-  --header-hover: var(--orange);
-  --nav-bottom: var(--header-bg);
-  --nav-bottom-hover: var(--orange);
-  --body-bg: black;
-  --body-copy: white;
-  --link: var(--orange);
+
 }
 
 a {

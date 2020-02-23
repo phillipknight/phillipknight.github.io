@@ -41,7 +41,7 @@ export default {
 .nav-link.active--exact:hover,
 .nav-link.active--exact:focus {
   border-bottom-color: var(--nav-bottom-hover);
-  color: #ffffff;
+  color: #31FF96;
   cursor: default;
   border-bottom: 0.5rem solid var(--nav-bottom-hover);
 }
