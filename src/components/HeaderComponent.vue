@@ -24,6 +24,19 @@ export default {
 };
 </script>
 <style>
+@media screen and (max-width: 1024px) {
+  /* make room for header when fixed */
+  .layout {
+    margin-top: 4rem;
+  }
+  /* fix header on mobile and tablet sizes */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +48,7 @@ export default {
   background-color: var(--header-bg);
   color: var(--header-link-color);
 }
+
 .header a {
   color: var(--header-link-color);
   text-decoration: none;

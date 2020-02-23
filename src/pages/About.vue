@@ -17,7 +17,7 @@
           the needle- seeing measurable change in a sometimes troubling world.
         </p>
         <p>
-          I currently help campaigns and nonprofit organizations build and manage online technolgy, with a focus
+          <strong>I currently help campaigns and nonprofit organizations build and manage digital tools</strong>, with a focus
           on connecting people with their leaders around the world. My past experience includes front-line field
           organizing, traditional communications, digital strategy, and a lifetime of nerding out with technology.
         </p>
@@ -26,9 +26,9 @@
 
     <section class="about-technology-section">
       <div class="about-technology">
-        <div>
-          <h3>Code Experience</h3>
-          <ul class="about-list">
+        <div class="card">
+          <h3 class="card__heading">Code Experience</h3>
+          <ul class="card__list">
             <li>HTML/CSS</li>
             <li>Javascript</li>
             <li>Vue.js</li>
@@ -40,9 +40,9 @@
           </ul>
         </div>
 
-        <div>
-          <h3>Platform Experience</h3>
-          <ul class="about-list">
+        <div class="card">
+          <h3 class="card__heading">Platform Experience</h3>
+          <ul class="card__list">
             <li>ActionKit</li>
             <li>NationBuilder</li>
             <li>NGP/VAN</li>
@@ -55,9 +55,9 @@
             <li>Google Analytics</li>
           </ul>
         </div>
-        <div>
-          <h3>Campaign Experience</h3>
-          <ul class="about-list">
+        <div class="card">
+          <h3 class="card__heading">Campaign Experience</h3>
+          <ul class="card__list">
             <li>US Senate</li>
             <li>State Legislatures</li>
             <li>Municipal & Local</li>
@@ -68,16 +68,25 @@
           </ul>
         </div>
       </div>
-      <div>
-      <!--  <g-image
-          src="~/images/clientcon-crop.jpg"
-          alt="photo of the very dashing Phillip Kent Knight"
-          width="350"
-          fit="cover"
-        /> -->
-      </div>
     </section>
-    <section></section>
+
+    <section>
+      <h2>Notable Accomplishments</h2>
+      <ul>
+        <li>Built first known single-page NationBuilder site.</li>
+        <li>Bartered with Union bosses for phone bank time.</li>
+        <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
+        <li>Was once contracted with express goal of annoying a US Senator.</li>
+      </ul>
+      <!--
+      <g-image
+        src="~/images/clientcon-crop.jpg"
+        alt="photo of the very dashing Phillip Kent Knight"
+        width="350"
+        fit="cover"
+      /> 
+      -->
+    </section>
   </Layout>
 </template>
 
@@ -98,38 +107,43 @@ export default {
   padding-bottom: 1.5rem;
 }
 
-.about-technology-section {
-  background-color: var(--secondary-color);
-  color: white;
-
-}
-
 .about-technology {
   display: flex;
   justify-content: space-around;
   text-align: center;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
+  height:fit-content;
+  align-items: center;
 }
 
 
-.about-list {
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 400px;
+.card {
+  border: 1px solid var(--dark-only-border);
+  margin: 1rem;
 }
 
-.about-list li {
-    padding: 0 0.5rem;
+.card__heading {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--one-three);
+}
+.card__list {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+  background-color:var(--three-two);
+  color:white;
 }
 
-.about-code-list li,
-.about-platforms-list li {
-  padding: 0.25rem;
+
+.card__list li {
+  padding: 0 0.5rem;
 }
 </style>
