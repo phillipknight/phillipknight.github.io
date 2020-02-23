@@ -1,52 +1,13 @@
 <template>
   <Layout>
     <section class="center-flex half-screen">
-      <h1 class="heading" id="namespace">Hi, I'm Phil!</h1>
+      <h1 class="intro__heading" id="namespace">Hi, I'm Phil!</h1>
       <p
-        class="intro-text"
+        class="intro__text"
       >I'm a campaigner turned technologist; I build and manage platforms, products, and projects with purpose.</p>
     </section>
 
-    <section class="half-screen">
-      <div class="links-section">
-        <nav class="quick-links" aria-labelledby="quick-links-heading">
-          <h2 id="quick-links-heading">Quick Links</h2>
-          <a
-            class="quick-link"
-            href="https://twitter.com/phillipkent"
-            target="_blank"
-            rel="noopener"
-          >Twitter</a>
-          <a
-            class="quick-link"
-            href="https://linkedin.com/in/phillipkentknight"
-            target="_blank"
-            rel="noopener"
-          >Linkedin</a>
-          <a
-            class="quick-link"
-            href="https://instagram.com/phillipkent"
-            target="_blank"
-            rel="noopener"
-          >Instagram</a>
-          <a
-            class="quick-link"
-            href="https://messenger.com/t/phillipkent"
-            target="_blank"
-            rel="noopener"
-          >Messenger</a>
-          <a
-            class="quick-link"
-            href="https://dev.to/phillipkent"
-            target="_blank"
-            rel="noopener"
-          >dev.to</a>
-        </nav>
-      </div>
-    </section>
-    <footer class="footer">
-    </footer>
-    
+
   </Layout>
 </template>
 
@@ -71,37 +32,39 @@ export default {
 }
 
 .half-screen {
-  height:50vh;
-}
+  height: 50vh;
+    min-height: fit-content;
 
+}
 
 .half-screen:first-child {
   height: calc(50vh - 3em);
 }
 
-.heading {
+.intro__heading {
   margin-bottom: 0;
 }
 
-.intro-text {
+.intro__text {
   text-align: center;
+  margin: 1rem;
 }
 
-.links-section {
+.quick-links-section {
   height: 50vh;
-  min-height: 320px;
+  min-height: fit-content;
+
   display: flex;
   justify-content: center;
-  background: var(--primary-color);
+
 }
 
-.quick-link {
+.quick-links__link {
   margin: 0.5rem;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: lowercase;
   font-weight: bold;
-  background-color: #2d2d2d;
   color: var(--secondary-body-color);
   width: 9rem;
   border: 1px solid var(--link);
@@ -115,18 +78,16 @@ export default {
   align-items: center;
 }
 
-#quick-links-heading {
+.quick-links__heading {
   font-size: 1.25rem;
   text-transform: lowercase;
   margin: 0;
 }
 
 .info-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-
-
 </style>

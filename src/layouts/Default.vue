@@ -4,6 +4,7 @@
     <div class="container">
       <slot />
     </div>
+    <FooterComponent twitter="phillipkent"></FooterComponent>
   </div>
 </template>
 
@@ -27,13 +28,15 @@ query {
 body {
   --color-alpha: black;
   --color-bravo: white;
+  --color-charlie: grey;
 
 /* header components */
 
-
+--nav-bg: var(--color-bravo);
+--nav-link: var(--color-alpha);
 --nav-bottom: var(--color-bravo);
 --nav-bottom-hover: var(--color-alpha);
---nav-hover: #561B8D;
+--nav-active: var(--color-charlie);
 
 
 

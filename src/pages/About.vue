@@ -61,7 +61,7 @@
             <li>US Senate</li>
             <li>State Legislatures</li>
             <li>Municipal & Local</li>
-            <li>Grassroots Organizing</li>
+            <li>Grassroots & Grasstops</li>
             <li>Gender Equality</li>
             <li>Global Poverty</li>
             <li>International Development</li>
@@ -71,14 +71,13 @@
     </section>
 
     <section class="accomplishments-section">
-      <div>
-         <g-image
-          src="~/images/clientcon-crop.jpg"
-          alt="Phil speaking at ActionKit Clientcon 2019"
-          width="350"
-          fit="cover"
-        />
-      </div>
+      <g-image
+        src="~/images/clientcon-crop.jpg"
+        alt="Phil speaking at ActionKit Clientcon 2019"
+        width="350"
+        fit="cover"
+      />
+
       <div class="accomplishments">
         <h2 class="accomplishments__heading">Some Notable Accomplishments</h2>
         <ul class="accomplishments__list">
@@ -105,7 +104,7 @@ export default {
 <style>
 .about-bio {
   max-width: 700px;
-  margin:3rem auto 3rem auto;
+  margin: 3rem auto 3rem auto;
 }
 .page-heading {
   margin: 0 1rem 1rem 1rem;
@@ -114,7 +113,7 @@ export default {
   margin: 0 1rem;
 }
 .bio__text {
-  margin:1rem;
+  margin: 1rem;
 }
 .about-technology {
   display: flex;
@@ -156,6 +155,8 @@ export default {
 
 .accomplishments-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .accomplishments {
@@ -165,15 +166,15 @@ export default {
   justify-content: center;
 }
 .accomplishments__heading {
-  margin:0 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 .accomplishments__list {
   list-style: none;
   list-style-type: none;
   margin: 1rem;
-  padding:0;
+  padding: 0;
 }
 .accomplishments__list li {
-padding: 0.125rem 0;
+  padding: 0.125rem 0;
 }
 </style>

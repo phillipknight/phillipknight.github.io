@@ -27,7 +27,7 @@ export default {
   height: 3rem;
   align-items: center;
   justify-content: center;
-  border-bottom: 0.5rem solid var(--nav-bottom);
+  border-bottom: 0.5rem solid transparent;
   box-sizing: border-box;
   padding: 0.5rem 0.25rem 0 0.25rem;
 }
@@ -35,13 +35,13 @@ export default {
 .nav__link:hover,
 .nav__link:focus {
   border-bottom-color: var(--nav-bottom-hover);
-  color: var(--header-hover);
+  color: var(--nav-active);
 }
 .nav__link.active--exact,
 .nav__link.active--exact:hover,
 .nav__link.active--exact:focus {
   border-bottom-color: var(--nav-bottom-hover);
-  color: var(--nav-hover);
+  color: var(--nav-active);
   cursor: default;
   border-bottom: 0.5rem solid var(--nav-bottom-hover);
 }
