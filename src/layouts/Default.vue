@@ -18,7 +18,6 @@ query {
 </script>
 <style>
 /* live in a casually responsive world */
-
 * {
   max-width: 100%;
   box-sizing: border-box;
@@ -26,19 +25,20 @@ query {
 
 /* default mode body styles */
 body {
-
+  --color-alpha: black;
+  --color-bravo: white;
 
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background: var(--body-bg);
-  color: var(--body-copy);
+  background: var(--color-bravo);
+  color: var(--color-alpha);
 }
 /* dark mode */
 body[data-theme="dark"] {
-  --one-two: var(--second-color);
-
+  --color-alpha: white;
+  --color-bravo: black;
 }
 
 a {
@@ -60,13 +60,6 @@ a {
 }
 .layout {
   margin: 0;
-}
-
-div.container p,
-div.container h1,
-div.container h2 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 img {

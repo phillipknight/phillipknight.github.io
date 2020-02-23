@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>About me</h1>
+    <h1 class="page-heading">About me</h1>
     <section class="about-intro-section">
       <g-image
         src="~/images/bw_headshot_pkk-crop.jpg"
@@ -9,14 +9,14 @@
         fit="cover"
       />
       <div class="about-bio">
-        <h2>Tinkering with technology and trying to make a difference.</h2>
-        <p>
+        <h2 class="bio__heading">Tinkering with technology and trying to make a difference.</h2>
+        <p class="bio__text">
           I’ve worked on campaigns ranging from municipal boards to United States Senate, and with organizations
           from small student groups to the largest LGBT nonprofit in the world. Every professional role I’ve had
           has been different, but my ambition and determination have always been the same: I’m motivated by moving
           the needle- seeing measurable change in a sometimes troubling world.
         </p>
-        <p>
+        <p class="bio__text">
           <strong>I currently help campaigns and nonprofit organizations build and manage digital tools</strong>, with a focus
           on connecting people with their leaders around the world. My past experience includes front-line field
           organizing, traditional communications, digital strategy, and a lifetime of nerding out with technology.
@@ -70,25 +70,25 @@
       </div>
     </section>
 
-    <section>
+    <section class="accomplishments-section">
+      <div>
+         <g-image
+          src="~/images/clientcon-crop.jpg"
+          alt="Phil speaking at ActionKit Clientcon 2019"
+          width="350"
+          fit="cover"
+        />
+      </div>
       <div class="accomplishments">
-        <h2>Some Notable Accomplishments</h2>
+        <h2 class="accomplishments__heading">Some Notable Accomplishments</h2>
         <ul class="accomplishments__list">
           <li>Built first known single-page NationBuilder site.</li>
           <li>Bartered with Union bosses for phone bank time.</li>
           <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
           <li>Was once contracted with express goal of annoying a US Senator.</li>
+          <li></li>
         </ul>
       </div>
-
-      <!--
-      <g-image
-        src="~/images/clientcon-crop.jpg"
-        alt="photo of the very dashing Phillip Kent Knight"
-        width="350"
-        fit="cover"
-      /> 
-      -->
     </section>
   </Layout>
 </template>
@@ -105,10 +105,17 @@ export default {
 <style>
 .about-bio {
   max-width: 700px;
-  margin-right: auto;
-  margin-left: auto;
+  margin:3rem auto 3rem auto;
 }
-
+.page-heading {
+  margin: 0 1rem 1rem 1rem;
+}
+.bio__heading {
+  margin: 0 1rem;
+}
+.bio__text {
+  margin:1rem;
+}
 .about-technology {
   display: flex;
   justify-content: space-around;
@@ -147,15 +154,26 @@ export default {
   padding: 0 0.5rem;
 }
 
-.accomplishments {
+.accomplishments-section {
   display: flex;
-  justify-content: center;
-
 }
 
+.accomplishments {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.accomplishments__heading {
+  margin:0 1rem;
+}
 .accomplishments__list {
   list-style: none;
   list-style-type: none;
-  padding: 0;
+  margin: 1rem;
+  padding:0;
+}
+.accomplishments__list li {
+padding: 0.125rem 0;
 }
 </style>
