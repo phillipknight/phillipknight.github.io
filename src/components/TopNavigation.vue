@@ -1,7 +1,7 @@
 <template>
   <nav class="nav" aria-label="Site Navigation">
-    <g-link class="nav-link" to="/">Hello</g-link>
-    <g-link class="nav-link" to="/about">About</g-link>
+    <g-link class="nav__link" to="/">Hello</g-link>
+    <g-link class="nav__link" to="/about">About</g-link>
 <!--    <g-link class="nav-link" to="/blog">Blog</g-link> -->
     <toggle-theme></toggle-theme>
   </nav>
@@ -21,7 +21,7 @@ export default {
 .nav {
   display: flex;
 }
-.nav-link {
+.nav__link {
   display: flex;
   margin-left: 0.5rem;
   height: 3rem;
@@ -32,16 +32,16 @@ export default {
   padding: 0.5rem 0.25rem 0 0.25rem;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   border-bottom-color: var(--nav-bottom-hover);
   color: var(--header-hover);
 }
-.nav-link.active--exact,
-.nav-link.active--exact:hover,
-.nav-link.active--exact:focus {
+.nav__link.active--exact,
+.nav__link.active--exact:hover,
+.nav__link.active--exact:focus {
   border-bottom-color: var(--nav-bottom-hover);
-  color: #31FF96;
+  color: var(--nav-hover);
   cursor: default;
   border-bottom: 0.5rem solid var(--nav-bottom-hover);
 }

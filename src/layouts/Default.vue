@@ -28,6 +28,19 @@ body {
   --color-alpha: black;
   --color-bravo: white;
 
+/* header components */
+
+
+--nav-bottom: var(--color-bravo);
+--nav-bottom-hover: var(--color-alpha);
+--nav-hover: #561B8D;
+
+
+
+
+
+
+
   font-family: sans-serif;
   margin: 0;
   padding: 0;

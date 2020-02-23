@@ -45,8 +45,7 @@ export default {
   max-width: 100%;
   height: 3rem;
   font-family: sans-serif;
-  background-color: var(--header-bg);
-  color: var(--header-link-color);
+  background-color: var(--nav-bg);
 }
 
 .header a {
