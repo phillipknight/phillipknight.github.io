@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="center-flex half-screen">
+    <section class="center-flex full-screen">
       <h1 class="intro__heading" id="namespace">Hi, I'm Phil!</h1>
       <p
         class="intro__text"
@@ -28,13 +28,8 @@ export default {
 }
 
 .full-screen {
-  height: 100vh;
-}
-
-.half-screen {
-  height: 50vh;
-    min-height: fit-content;
-
+  height:calc(100vh - 3rem);
+  min-height: fit-content;
 }
 
 .half-screen:first-child {

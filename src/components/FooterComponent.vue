@@ -1,22 +1,21 @@
 <template>
   <footer class="footer">
-    <g-link to="/">🏠</g-link>
 
     <ul class="social-links">
-      <li class="social-link__twitter">
-        <a target="_blank" rel="noopener" href="https://twitter.com/">twitter</a>
+      <li v-if="twitterID" class="social-link__twitter">
+        <a target="_blank" rel="noopener" :href="'https://twitter.com/'+ twitterID">twitter</a>
       </li>
-      <li class="social-link__linkedin">
-        <a target="_blank" rel="noopener" href="https://linkedin.com/in/phillipkentknight">linkedin</a>
+      <li v-if="linkedinID" class="social-link__linkedin">
+        <a target="_blank" rel="noopener" :href="'https://linkedin.com/in/' + linkedinID">linkedin</a>
       </li>
-      <li class="social-link__instagram">
-        <a target="_blank" rel="noopener" href="https://instagram.com/phillipkent">instagram</a>
+      <li v-if="instagramID" class="social-link__instagram">
+        <a target="_blank" rel="noopener" :href="'https://instagram.com/' + instagramID">instagram</a>
       </li>
-      <li class="social-link__messenger">
-        <a target="_blank" rel="noopener" href="https://messenger.com/t/phillipkent">messenger</a>
+      <li v-if="facebookID" class="social-link__messenger">
+        <a target="_blank" rel="noopener" :href="'https://messenger.com/t/' + facebookID">messenger</a>
       </li>
-      <li class="social-link__dev">
-        <a target="_blank" rel="noopener" href="https://dev.to/phillipkent">dev</a>
+      <li v-if="devID" class="social-link__dev">
+        <a target="_blank" rel="noopener" :href="'https://dev.to/' + phillipkent">dev</a>
       </li>
     </ul>
   </footer>
@@ -34,15 +33,25 @@ query {
 
 export default {
   props: {
-      twitter:String,
-      linkedinID:String,
-      instagramID:String,
-      facebookID:String,
-      devID:String
-
-    
+    twitterID: String,
+    linkedinID: String,
+    instagramID: String,
+    facebookID: String,
+    devID: String
   }
 };
 </script>
 <style>
+.social-links {
+    display:flex;
+    justify-content: space-around;
+    padding:0;
+    margin:0.5rem;
+    list-style:none;
+    list-style-type: none;
+}
+
+.footer {
+    margin-top:3rem;
+}
 </style>

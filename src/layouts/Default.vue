@@ -4,7 +4,13 @@
     <div class="container">
       <slot />
     </div>
-    <FooterComponent twitter="phillipkent"></FooterComponent>
+    <FooterComponent
+      twitterID="phillipkent"
+      linkedinID="phillipkentknight"
+      instagramID="phillipkent"
+      facebookID="phillipkent"
+      devID="phillipkent"
+    ></FooterComponent>
   </div>
 </template>
 
@@ -30,19 +36,13 @@ body {
   --color-bravo: white;
   --color-charlie: grey;
 
-/* header components */
+  /* header components */
 
---nav-bg: var(--color-bravo);
---nav-link: var(--color-alpha);
---nav-bottom: var(--color-bravo);
---nav-bottom-hover: var(--color-alpha);
---nav-active: var(--color-charlie);
-
-
-
-
-
-
+  --nav-bg: var(--color-bravo);
+  --nav-link: var(--color-alpha);
+  --nav-bottom: var(--color-bravo);
+  --nav-bottom-hover: var(--color-alpha);
+  --nav-active: var(--color-charlie);
 
   font-family: sans-serif;
   margin: 0;
