@@ -42,6 +42,10 @@ export default {
 };
 </script>
 <style>
+
+.footer {
+    background-color:var(--nav-bg);
+}
 .social-links {
     display:flex;
     justify-content: space-around;
