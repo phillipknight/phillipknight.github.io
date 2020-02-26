@@ -48,7 +48,7 @@ body {
   --card-border: var(--main-color);
   --card-headline-color: #ffffff;
   --card-headline-bg: var(--main-color);
-
+  --card-heading-icons: #920000;
   font-family: sans-serif;
   margin: 0;
   padding: 0;

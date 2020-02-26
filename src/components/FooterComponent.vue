@@ -14,7 +14,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
-          :href="'https://dev.to/' + phillipkent"
+          :href="'https://dev.to/' + devID"
         >dev.to</a>
       </li>
       <li v-if="instagramID" class="social-link__instagram">
