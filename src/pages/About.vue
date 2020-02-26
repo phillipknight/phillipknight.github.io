@@ -107,7 +107,7 @@ export default {
   margin: 3rem auto 3rem auto;
 }
 .page-heading {
-  margin: 0 1rem 1rem 1rem;
+  margin: 2rem 1rem 1rem 1rem;
 }
 .bio__heading {
   margin: 0 1rem;
