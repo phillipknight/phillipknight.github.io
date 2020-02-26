@@ -34,9 +34,8 @@ background-color: transparent;
     border: 0;
     color: var(--nav-link);
     cursor: pointer;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 0.5rem;
     margin:0 0 0 0.5rem;
-    border-left: 1px solid;
     opacity: .8;
 
 }

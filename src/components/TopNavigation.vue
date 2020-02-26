@@ -23,13 +23,12 @@ export default {
 }
 .nav__link {
   display: flex;
-  margin-left: 0.5rem;
   height: 3rem;
   align-items: center;
   justify-content: center;
   border-bottom: 0.5rem solid transparent;
   box-sizing: border-box;
-  padding: 0.5rem 0.25rem 0 0.25rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .nav__link:hover,
@@ -40,9 +39,9 @@ export default {
 .nav__link.active--exact,
 .nav__link.active--exact:hover,
 .nav__link.active--exact:focus {
-  border-bottom-color: var(--nav-bottom-hover);
   color: var(--nav-active);
   cursor: default;
   border-bottom: 0.5rem solid var(--nav-bottom-hover);
+  background: var(--nav-active-bg);
 }
 </style>
