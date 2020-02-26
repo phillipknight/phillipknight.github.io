@@ -34,19 +34,19 @@ query {
 body {
   --color-alpha: black;
   --color-bravo: white;
-  --color-charlie: grey;
+  --main-color:#eb0000;
 
   /* header components */
 
-  --nav-bg: #eb0000;
+  --nav-bg: var(--main-color);
   --nav-link: #ffffff;
   --nav-active: #000000;
   --nav-bottom: var(--color-bravo);
   --nav-bottom-hover: var(--color-alpha);
 
-  --card-border: #eb0000;
+  --card-border: var(--main-color);
   --card-headline-color: #ffffff;
-  --card-headline-bg: #eb0000;
+  --card-headline-bg: var(--main-color);
 
   font-family: sans-serif;
   margin: 0;
@@ -58,12 +58,15 @@ body {
 /* dark mode */
 body[data-theme="dark"] {
   --color-alpha: white;
-  --color-bravo: black;
+  --color-bravo: #0f0f0f;
+  --nav-bg: black;
+  --nav-active:var(--main-color);
+  --nav-bottom-hover:var(--main-color);
 }
 
 h2,
 h3 {
-  color: #eb0000;
+  color: var(--main-color);
 }
 
 a {
