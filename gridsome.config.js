@@ -13,6 +13,14 @@ module.exports = {
       options: {
         id: 'UA-107681719-3'
       }
-    }
-  ]
-}
+    },
+    {
+      use: 'gridsome-source-google-sheets',
+      options: {
+        sheetId: '1LVQf_ZponKTgvwUO7SAeFQheaF56dktYj0iHyWAMD5o',
+        apiKey: 'AIzaSyBsEB2sbiNAMnVf23kNQtsVeIVh1G5BVls'
+      }
+    ,  
+  }
+]}
+

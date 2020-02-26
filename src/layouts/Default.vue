@@ -34,16 +34,17 @@ query {
 body {
   --color-alpha: black;
   --color-bravo: white;
-  --main-color:#eb0000;
+  --main-color: #eb0000;
 
   /* header components */
 
   --nav-bg: var(--main-color);
   --nav-link: #ffffff;
-  --nav-active: #000000;
+  --nav-active: #fff;
+  --nav-active-bg: #920000;
   --nav-bottom: var(--color-bravo);
   --nav-bottom-hover: var(--color-alpha);
-
+  --nav-focus: #000;
   --card-border: var(--main-color);
   --card-headline-color: #ffffff;
   --card-headline-bg: var(--main-color);
@@ -60,8 +61,8 @@ body[data-theme="dark"] {
   --color-alpha: white;
   --color-bravo: #0f0f0f;
   --nav-bg: black;
-  --nav-active:var(--main-color);
-  --nav-bottom-hover:var(--main-color);
+  --nav-focus: #eb0000;
+  --nav-bottom-hover: var(--main-color);
 }
 
 h2,
@@ -93,5 +94,4 @@ a {
 img {
   max-width: 100%;
 }
-
 </style>
