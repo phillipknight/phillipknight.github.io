@@ -35,6 +35,8 @@ background-color: transparent;
     color: var(--nav-link);
     cursor: pointer;
     padding: 0 0 0 1rem;
+    margin:0 0 0 0.5rem;
+    border-left: 1px solid;
     opacity: .8;
 
 }
