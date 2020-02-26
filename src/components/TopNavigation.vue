@@ -35,7 +35,7 @@ export default {
 .nav__link:hover,
 .nav__link:focus {
   border-bottom-color: var(--nav-bottom-hover);
-  color: var(--nav-active);
+  color: var(--nav-focus);
 }
 .nav__link.active--exact,
 .nav__link.active--exact:hover,

@@ -127,14 +127,16 @@ export default {
 }
 
 .card {
-  border: 1px solid var(--dark-only-border);
+  
+  border: 1px solid var(--card-border);
   margin: 1rem;
 }
 
 .card__heading {
+  color:var(--card-headline-color);
   padding: 1rem;
   margin: 0;
-  background-color: var(--one-three);
+  background-color: var(--card-headline-bg);
 }
 .card__list {
   margin: 0;

@@ -32,7 +32,7 @@ export default {
 .toggle-theme {
 background-color: transparent;
     border: 0;
-    color: var(--header-link-color);
+    color: var(--nav-link);
     cursor: pointer;
     padding: 0 0 0 1rem;
     margin:0 0 0 0.5rem;

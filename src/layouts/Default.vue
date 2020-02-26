@@ -38,11 +38,15 @@ body {
 
   /* header components */
 
-  --nav-bg: var(--color-bravo);
-  --nav-link: var(--color-alpha);
+  --nav-bg: #eb0000;
+  --nav-link: #ffffff;
+  --nav-active: #000000;
   --nav-bottom: var(--color-bravo);
   --nav-bottom-hover: var(--color-alpha);
-  --nav-active: var(--color-charlie);
+
+  --card-border: #eb0000;
+  --card-headline-color: #ffffff;
+  --card-headline-bg: #eb0000;
 
   font-family: sans-serif;
   margin: 0;
@@ -55,6 +59,11 @@ body {
 body[data-theme="dark"] {
   --color-alpha: white;
   --color-bravo: black;
+}
+
+h2,
+h3 {
+  color: #eb0000;
 }
 
 a {
