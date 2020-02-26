@@ -14,7 +14,13 @@
 <script>
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Hello, world!",
+    meta: [
+      { name: "description", content: "I'm a digital tech professional working for progressive campaigns and nonprofit organizations, and this is my website" },
+      { name: "og:title", content: "Phillip Kent Knight - Campaign Tech" },
+      { name: "og:description", content: "I'm a digital tech professional working for progressive campaigns and nonprofit organizations, and this is my website" },
+      { name: "og:url", content: "https://phillipknight.github.io"},
+   ],
   }
 };
 </script>
