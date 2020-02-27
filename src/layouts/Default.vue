@@ -50,6 +50,7 @@ body {
   --card-headline-color: #ffffff;
   --card-headline-bg: var(--main-color);
   --card-heading-icons: #920000;
+  --card-body-bg:none; 
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -65,6 +66,12 @@ body[data-theme="dark"] {
   --nav-focus: #eb0000;
   --nav-active: #fff;
   --nav-bottom-hover: var(--main-color);
+
+  --card-border: var(--main-color);
+  --card-headline-color: #ffffff;
+  --card-headline-bg: #270000;
+  --card-heading-icons: #920000;
+  --card-body-bg: #1b1b1b;
 }
 
 h2,

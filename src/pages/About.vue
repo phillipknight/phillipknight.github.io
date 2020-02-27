@@ -212,7 +212,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   width: 400px;
-  background-color: var(--three-two);
+  background-color: var(--card-body-bg);
 }
 
 .card__list li {
