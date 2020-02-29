@@ -130,13 +130,12 @@
       />
 
       <div class="accomplishments">
-        <h2 class="accomplishments__heading">Some Notable Accomplishments</h2>
+        <h2 class="accomplishments__heading">Notable Accomplishments</h2>
         <ul class="accomplishments__list">
           <li>Built first known single-page NationBuilder site.</li>
           <li>Bartered with Union bosses for phone bank time.</li>
           <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
           <li>Was once contracted with express goal of annoying a US Senator.</li>
-          <li></li>
         </ul>
       </div>
     </section>
