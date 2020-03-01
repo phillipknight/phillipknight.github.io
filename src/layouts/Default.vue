@@ -32,19 +32,21 @@ query {
 
 /* default mode body styles */
 body {
-  --color-alpha: black;
-  --color-bravo: white;
-  --main-color: #eb0000;
+
+  --navy: #021a25;
+  --pink: #DB73A0; 
+  --mint:#2BA25B;
+
 
   /* header components */
 
   --nav-bg: var(--main-color);
   --nav-link: #ffffff;
-  --nav-active: #fff;
-  --nav-active-bg: #920000;
-  --nav-bottom: var(--color-bravo);
-  --nav-bottom-hover: var(--color-alpha);
-  --nav-focus: black;
+  --nav-active: var(--mint);
+  --nav-active-bg: var(--navy);
+  --nav-bottom: var(--mint);
+  --nav-bottom-hover: var(--pink);
+  --nav-focus: var(--pink);
 
   --card-border: var(--main-color);
   --card-headline-color: #ffffff;
@@ -60,12 +62,14 @@ body {
 }
 /* dark mode */
 body[data-theme="dark"] {
+
+
   --color-alpha: white;
-  --color-bravo: #0f0f0f;
-  --nav-bg: black;
-  --nav-focus: #eb0000;
+  --color-bravo: var(--navy);
+  --nav-bg: var(--color-bravo);
+  --nav-focus: var(--pink);
   --nav-active: #fff;
-  --nav-bottom-hover: var(--main-color);
+  --nav-bottom-hover: var(--pink);
 
   --card-border: var(--main-color);
   --card-headline-color: #ffffff;
