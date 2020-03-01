@@ -1,14 +1,18 @@
 <template>
   <Layout>
     <section class="full-screen">
-      <div class="intro first-impression">
-        <h1 class="intro__headline" id="namespace" ref="introHeadline">
+      <div class="intro-grid">
+        <div class="intro-grid__column site-title">
+                  <h1 class="intro__headline" id="namespace" ref="introHeadline">
           <span class="intro__headline-word">Hi,</span>
           <span class="intro__headline-word">I'm</span>
           <span class="intro__headline-word">Phil</span>
         </h1>
+        </div>
+        <div class="intro-grid__column"></div>
       </div>
-<g-image
+
+      <g-image
         src="~/images/phil-treated.png"
         alt="stylized headshot of Phil"
         width="350"
@@ -54,18 +58,17 @@ export default {
 .full-screen {
   height: calc(100vh - 3rem);
   min-height: fit-content;
+  /* SAVE IMAGE STYLE FOR LATER
   background: url(~@/images/beard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left; */
   background: var(--navy);
 }
 
 .half-screen:first-child {
   height: calc(50vh - 3em);
 }
-
-
 
 .intro__headline {
   font-size: 25vh;
