@@ -40,24 +40,23 @@ body {
 
   /* header components */
 
-  --nav-bg: var(--main-color);
-  --nav-link: #ffffff;
-  --nav-active: var(--mint);
-  --nav-active-bg: var(--navy);
-  --nav-bottom: var(--mint);
-  --nav-bottom-hover: var(--pink);
+  --color-alpha: white;
+  --color-bravo: var(--navy);
+  --nav-bg: var(--color-bravo);
   --nav-focus: var(--pink);
+  --nav-active: #fff;
+  --nav-bottom-hover: var(--pink);
 
-  --card-border: var(--main-color);
-  --card-headline-color: #ffffff;
-  --card-headline-bg: var(--main-color);
+  --card-border: var(--mint);
+  --card-headline-color: var(--pink);
+  --card-headline-bg: #222;
   --card-heading-icons:var(--pink);
-  --card-body-bg:none; 
+  --card-body-bg: transparent;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background: var(--color-bravo);
+  background: var(--navy);
   color: var(--color-alpha);
 }
 /* dark mode */
