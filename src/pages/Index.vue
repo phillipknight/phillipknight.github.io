@@ -122,12 +122,16 @@ export default {
   display: flex;
   justify-content: flex-end;
 }
+
+
 .intro__text {
   text-align: left;
-  width: 50%;
   padding: 0 3rem;
 }
+@media screen (min-width: 926px) {
+    width: 50%;
 
+}
 
 .intro__text a {
     color: var(--mint);
