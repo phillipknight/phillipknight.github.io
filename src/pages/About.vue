@@ -2,12 +2,7 @@
   <Layout>
     <h1 class="page-heading">About me</h1>
     <section class="about-intro-section">
-      <g-image
-        src="~/images/bw_headshot_pkk-crop.jpg"
-        alt="photo of the very dashing Phillip Kent Knight"
-        width="350"
-        fit="cover"
-      />
+
       <div class="about-bio">
         <h2 class="bio__heading">Tinkering with technology and trying to make a difference.</h2>
         <p class="bio__text">

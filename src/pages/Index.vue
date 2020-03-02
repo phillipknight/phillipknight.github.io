@@ -1,26 +1,33 @@
 <template>
   <Layout>
-    <section class="full-screen">
+    <section class="greet">
       <div class="intro-grid">
         <div class="intro-grid__column site-title">
-                  <h1 class="intro__headline" id="namespace" ref="introHeadline">
-          <span class="intro__headline-word">Hi,</span>
-          <span class="intro__headline-word">I'm</span>
-          <span class="intro__headline-word">Phil</span>
-        </h1>
+          <h1 class="intro__headline" id="namespace" ref="introHeadline">
+            <span class="intro__headline-word">Hi,</span>
+            <span class="intro__headline-word">I'm</span>
+            <span class="intro__headline-word">Phil</span>
+          </h1>
         </div>
-        <div class="intro-grid__column"></div>
+        <div class="intro-grid__column pics">
+          <g-image
+            src="~/images/phil-treated.png"
+            alt="stylized headshot of Phil"
+            width="350"
+            fit="cover"
+          />
+          <g-image src="~/images/phil-treated.png" alt width="350" fit="cover" />
+          <g-image src="~/images/phil-treated.png" alt width="350" fit="cover" />
+        </div>
       </div>
-
-      <g-image
-        src="~/images/phil-treated.png"
-        alt="stylized headshot of Phil"
-        width="350"
-        fit="cover"
-      />
-      <p
-        class="intro__text"
-      >I'm a campaigner turned technologist; I build and manage platforms, products, and projects with purpose.</p>
+    </section>
+    <section class="intro-text-section">
+      <div class="intro__text">
+        <h2
+          class
+        >A campaigner turned technologist, I build and manage projects, products, and platforms with purpose.</h2>
+        <g-link to="/about">Learn more about my professional work</g-link>
+      </div>
     </section>
   </Layout>
 </template>
@@ -66,8 +73,26 @@ export default {
   background: var(--navy);
 }
 
-.half-screen:first-child {
-  height: calc(50vh - 3em);
+.intro-grid__column.pics {
+  display: flex;
+  overflow-x: hidden;
+  min-width: fit-content;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  align-items: center;
+  height: calc(100vh - 3rem);
+}
+
+.intro-grid__column.pics img {
+  margin-left: 1rem;
+}
+
+.intro-grid__column.site-title {
+  display: flex;
+  justify-content: center;
 }
 
 .intro__headline {
@@ -92,48 +117,23 @@ export default {
 .intro__headline-word:nth-child(3) {
   color: var(--mint);
 }
+
+.intro-text-section {
+  display: flex;
+  justify-content: flex-end;
+}
 .intro__text {
-  text-align: center;
-  margin: 1rem;
+  text-align: left;
+  width: 50%;
+  padding: 0 3rem;
 }
 
-.quick-links-section {
-  height: 50vh;
-  min-height: fit-content;
 
-  display: flex;
-  justify-content: center;
+.intro__text a {
+    color: var(--mint);
+    font-weight: bold;
+    text-transform: lowercase;
 }
 
-.quick-links__link {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-weight: bold;
-  color: var(--secondary-body-color);
-  width: 9rem;
-  border: 1px solid var(--link);
-}
-
-.quick-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.quick-links__heading {
-  font-size: 1.25rem;
-  text-transform: lowercase;
-  margin: 0;
-}
-
-.info-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+.intro__text a::after {display: inline-block;content: "⯈";text-decoration: none;}
 </style>

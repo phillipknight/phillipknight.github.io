@@ -51,7 +51,7 @@ body {
   --card-border: var(--main-color);
   --card-headline-color: #ffffff;
   --card-headline-bg: var(--main-color);
-  --card-heading-icons: #920000;
+  --card-heading-icons:var(--pink);
   --card-body-bg:none; 
   font-family: sans-serif;
   margin: 0;
@@ -71,11 +71,11 @@ body[data-theme="dark"] {
   --nav-active: #fff;
   --nav-bottom-hover: var(--pink);
 
-  --card-border: var(--main-color);
-  --card-headline-color: #ffffff;
-  --card-headline-bg: #270000;
-  --card-heading-icons: #920000;
-  --card-body-bg: #1b1b1b;
+  --card-border: var(--mint);
+  --card-headline-color: var(--pink);
+  --card-headline-bg: #222;
+  --card-heading-icons:var(--pink);
+  --card-body-bg: transparent;
 }
 
 h2,
