@@ -26,7 +26,30 @@
         <h2
           class
         >A campaigner turned technologist, I build and manage projects, products, and platforms with purpose.</h2>
-        <g-link to="/about">Learn more about my professional work</g-link>
+        <g-link to="/about">
+          Learn more about my work
+          <svg
+          aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 640 640"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            style="
+    fill: var(--mint);
+    margin-left: 0.5rem;
+    width: 1.5rem;
+"
+          >
+            <path
+              d="M640.012 319.953L394.729 74.788H163.266l163.36 163.361H-.012v163.702h326.638l-163.36 163.361h231.463z"
+            />
+          </svg>
+        </g-link>
       </div>
     </section>
   </Layout>
@@ -84,6 +107,7 @@ export default {
   grid-template-columns: 4fr 4fr;
   align-items: center;
   height: calc(100vh - 3rem);
+  height: 100vh;
 }
 
 .intro-grid__column.pics img {
@@ -123,21 +147,26 @@ export default {
   justify-content: flex-end;
 }
 
-
 .intro__text {
   text-align: left;
   padding: 0 3rem;
 }
-@media screen (min-width: 926px) {
-    width: 50%;
-
-}
 
 .intro__text a {
-    color: var(--mint);
-    font-weight: bold;
-    text-transform: lowercase;
+  color: var(--mint);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.intro__text a::after {display: inline-block;content: "⯈";text-decoration: none;}
+.intro__text a:focus, .intro__text a:hover {
+    font-size: larger;
+}
+
+@media only screen and (min-width: 926px) {
+  .intro__text {
+    width: 50%;
+  }
+}
 </style>

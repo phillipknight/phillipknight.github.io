@@ -1,8 +1,11 @@
 <template>
   <Layout>
-    <h1 class="page-heading">About me</h1>
+    <h1 class="page__headline">
+      <span class="page__headline-word">What</span>
+      <span class="page__headline-word">I</span>
+      <span class="page__headline-word">Do</span>
+    </h1>
     <section class="about-intro-section">
-
       <div class="about-bio">
         <h2 class="bio__heading">Tinkering with technology and trying to make a difference.</h2>
         <p class="bio__text">
@@ -147,94 +150,49 @@ export default {
 
 
 <style>
+.page__headline {
+  font-size: 25vh;
+  font-family: "Bebas Neue", "Tungsten", Impact, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 0.85;
+  font-weight: normal;
+  text-align: right;
+  padding: 1rem;
+}
+.page__headline-word {
+  display: block;
+}
+
+.page__headline-word:nth-child(1) {
+  color: white;
+}
+.page__headline-word:nth-child(2) {
+  color: var(--pink);
+}
+
+.page__headline-word:nth-child(3) {
+  color: var(--mint);
+}
+
+.about-intro-section {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
 .about-bio {
-  max-width: 700px;
-  margin: 3rem auto 3rem auto;
-}
-.page-heading {
-  margin: 1rem 1rem 1rem 1rem;
-}
-.bio__heading {
-  margin: 0 1rem;
-}
-.bio__text {
-  margin: 1rem;
-}
-.about-technology {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  flex-wrap: wrap-reverse;
-  justify-content: space-around;
-  height: fit-content;
-  align-items: center;
-  margin: 3rem 0;
+  width: 100%;
+
+  padding: 1rem;
 }
 
-.card {
-  border: 1px solid var(--card-border);
-  margin: 1rem;
-}
+@media only screen and (min-width: 926px) {
+  .page__headline-word {
+    display: inline;
+    margin-left: 5vw;
+  }
 
-.card__heading {
-  display: flex;
-  justify-content: space-between;
-
-  color: var(--card-headline-color);
-
-  padding: 0 1rem;
-  margin: 0;
-  background-color: var(--card-headline-bg);
-  text-transform: lowercase;
-}
-
-.card__heading-text {
-  color: var(--card-headline-color);
-}
-.card__heading svg {
-  width: 2.5rem;
-  fill: var(--card-heading-icons);
-}
-
-.card__list {
-  margin: 0;
-  padding: 1rem 0.5rem;
-  list-style: none;
-  list-style-type: none;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 400px;
-  background-color: var(--card-body-bg);
-}
-
-.card__list li {
-  padding: 0 0.5rem;
-}
-
-.accomplishments-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.accomplishments {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.accomplishments__heading {
-  margin: 1rem 1rem 0 1rem;
-}
-.accomplishments__list {
-  list-style: none;
-  list-style-type: none;
-  margin: 1rem;
-  padding: 0;
-}
-.accomplishments__list li {
-  padding: 0.125rem 0;
+  .about-bio {
+    width: 50vw;
+  }
 }
 </style>
