@@ -73,7 +73,7 @@ body[data-theme="dark"] {
   --card-border: var(--mint);
   --card-headline-color: var(--pink);
   --card-headline-bg: #222;
-  --card-heading-icons:var(--pink);
+  --card-heading-icons:var(--navy);
   --card-body-bg: transparent;
 }
 
