@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <HeaderComponent></HeaderComponent>
+
     <div class="container">
       <slot />
     </div>
@@ -50,7 +51,7 @@ body {
   --card-border: var(--mint);
   --card-headline-color: var(--pink);
   --card-headline-bg: #222;
-  --card-heading-icons:var(--pink);
+  --card-heading-icons:var(--navy);
   --card-body-bg: transparent;
   font-family: sans-serif;
   margin: 0;
