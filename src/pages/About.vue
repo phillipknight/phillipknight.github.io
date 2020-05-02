@@ -1,11 +1,13 @@
 <template>
   <Layout>
-    <h1 class="page__headline">
-      <span class="page__headline-word">What</span>
-      <span class="page__headline-word">I</span>
-      <span class="page__headline-word">Do</span>
-    </h1>
     <section class="about-intro-section">
+      <div class="about-headline">
+        <h1 class="page__headline">
+          <span class="page__headline-word">What</span>
+          <span class="page__headline-word">I</span>
+          <span class="page__headline-word">Do</span>
+        </h1>
+      </div>
       <div class="about-bio">
         <h2 class="bio__heading">Tinkering with technology and trying to make a difference.</h2>
         <p class="bio__text">
@@ -130,7 +132,21 @@
       <div class="accomplishments">
         <div class="accomplishments__heading">
           <h2 class="accomplishments__heading-text">Notable Accomplishments</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M498.644 237.18c17.599-5.232 33.296-13.583 46.064-24.236 20.94-17.457 33.862-41.15 33.862-67.052 0-14.47-4.027-28.23-11.185-40.548l.035-.024c-3.212-5.516-7.063-10.772-11.492-15.697-2.315 32.28-10.217 62.942-22.618 90.793-9.201 20.657-20.906 39.744-34.666 56.764zM326.638 475.057l14.74 41.327 43.855 1.24-34.748 26.788 12.366 42.095-36.213-24.768-36.201 24.768 12.366-42.095-34.748-26.788 43.855-1.24 14.728-41.327zm-186.333-53.481h372.666v218.436H140.305V421.576zm208.869-108.698v34.134h2.575v23.847h-64.702v-23.847h2.575v-34.311c-39.426-6.106-75.45-23.882-104.895-49.938l-3.496 9.662c-40.56-.685-77.28-14.67-103.915-36.863-27.485-22.925-44.457-54.58-44.457-89.67 0-19.796 5.48-38.564 15.26-55.371l-.047-.035c9.897-17.032 24.283-31.926 41.823-43.62l15.886-10.582H87.39V-.012h461.533v36.296H534.23l15.874 10.583c17.492 11.658 31.843 26.551 41.776 43.619h.06c9.731 16.748 15.2 35.54 15.2 55.406 0 35.09-16.973 66.745-44.457 89.658-26.634 22.205-63.355 36.19-103.903 36.875l-3.508-9.685c-29.752 26.339-66.202 44.22-106.1 50.138zm-96.745 81.84h133.927v23.835H252.429v-23.835zm20.421-23.859h93.084v23.847H272.85v-23.847zM95.293 212.944c12.78 10.654 28.477 19.016 46.076 24.248-13.76-17.02-25.477-36.118-34.666-56.776-12.402-27.827-20.304-58.5-22.619-90.769a94.707 94.707 0 0 0-11.456 15.697h-.06c-7.133 12.26-11.137 26.02-11.137 40.548 0 25.914 12.921 49.595 33.862 67.052z"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M498.644 237.18c17.599-5.232 33.296-13.583 46.064-24.236 20.94-17.457 33.862-41.15 33.862-67.052 0-14.47-4.027-28.23-11.185-40.548l.035-.024c-3.212-5.516-7.063-10.772-11.492-15.697-2.315 32.28-10.217 62.942-22.618 90.793-9.201 20.657-20.906 39.744-34.666 56.764zM326.638 475.057l14.74 41.327 43.855 1.24-34.748 26.788 12.366 42.095-36.213-24.768-36.201 24.768 12.366-42.095-34.748-26.788 43.855-1.24 14.728-41.327zm-186.333-53.481h372.666v218.436H140.305V421.576zm208.869-108.698v34.134h2.575v23.847h-64.702v-23.847h2.575v-34.311c-39.426-6.106-75.45-23.882-104.895-49.938l-3.496 9.662c-40.56-.685-77.28-14.67-103.915-36.863-27.485-22.925-44.457-54.58-44.457-89.67 0-19.796 5.48-38.564 15.26-55.371l-.047-.035c9.897-17.032 24.283-31.926 41.823-43.62l15.886-10.582H87.39V-.012h461.533v36.296H534.23l15.874 10.583c17.492 11.658 31.843 26.551 41.776 43.619h.06c9.731 16.748 15.2 35.54 15.2 55.406 0 35.09-16.973 66.745-44.457 89.658-26.634 22.205-63.355 36.19-103.903 36.875l-3.508-9.685c-29.752 26.339-66.202 44.22-106.1 50.138zm-96.745 81.84h133.927v23.835H252.429v-23.835zm20.421-23.859h93.084v23.847H272.85v-23.847zM95.293 212.944c12.78 10.654 28.477 19.016 46.076 24.248-13.76-17.02-25.477-36.118-34.666-56.776-12.402-27.827-20.304-58.5-22.619-90.769a94.707 94.707 0 0 0-11.456 15.697h-.06c-7.133 12.26-11.137 26.02-11.137 40.548 0 25.914 12.921 49.595 33.862 67.052z"
+            />
+          </svg>
         </div>
         <ul class="accomplishments__list">
           <li>Built first known single-page NationBuilder site.</li>
@@ -257,11 +273,10 @@ export default {
   padding: 0 0.5rem;
 }
 
-
 .accomplishments {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .accomplishments__heading {
@@ -279,7 +294,6 @@ export default {
   fill: var(--pink);
 }
 
-
 .accomplishments__heading-text {
   font-family: "Bebas Neue";
   font-weight: normal;
@@ -287,8 +301,6 @@ export default {
 }
 
 .accomplishments__list {
-  margin:0;
+  margin: 0;
 }
-
-
 </style>
