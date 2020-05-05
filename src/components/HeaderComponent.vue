@@ -47,6 +47,7 @@ export default {
   font-family: sans-serif;
   background-color: white;
   background-color: var(--nav-bg);
+  z-index: 9999;
 }
 
 .header a {

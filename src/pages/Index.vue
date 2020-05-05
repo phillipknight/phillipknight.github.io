@@ -106,7 +106,6 @@ export default {
   display: grid;
   grid-template-columns: 4fr 4fr;
   align-items: center;
-  height: calc(100vh - 3rem);
   height: 100vh;
 }
 
@@ -165,6 +164,9 @@ export default {
 }
 
 @media only screen and (min-width: 926px) {
+  .intro-grid {
+      height: calc(100vh - 3rem);
+  }
   .intro__text {
     width: 50%;
   }
