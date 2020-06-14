@@ -20,7 +20,7 @@ export default function (Vue, { router, head, isClient }) {
     // Add a meta tag
     head.meta.push({
       name: 'theme-color',
-      content: '#021a25'
+      content: '#DB73A0'
     })
    
 
