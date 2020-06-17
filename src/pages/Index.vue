@@ -16,8 +16,8 @@
             width="350"
             fit="cover"
           />
-          <g-image src="~/images/phil-treated.png" alt width="350" fit="cover" />
-          <g-image src="~/images/phil-treated.png" alt width="350" fit="cover" />
+          <g-image src="~/images/phil-treated.png" alt="" width="350" fit="cover" />
+          <g-image src="~/images/phil-treated.png" alt="" width="350" fit="cover" />
         </div>
       </div>
     </section>
@@ -156,12 +156,10 @@ export default {
   font-weight: bold;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  font-size:larger;
 }
 
-.intro__text a:focus, .intro__text a:hover {
-    font-size: larger;
-}
+
 
 @media only screen and (min-width: 926px) {
   .intro-grid {

@@ -1,1 +1,1 @@
-This is just my work in progress personal website... running on gridsome. 
+This is just my work in progress personal website... running on gridsome.
