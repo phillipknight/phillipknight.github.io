@@ -111,6 +111,7 @@ export default {
 
 .intro-grid__column.pics img {
   margin-left: 1rem;
+  height: intrinsic;
 }
 
 .intro-grid__column.site-title {
