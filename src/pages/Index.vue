@@ -63,15 +63,15 @@ export default {
       {
         name: "description",
         content:
-          "I'm a digital tech professional working for progressive campaigns and nonprofit organizations, and this is my website"
+          "Building digital products for progress."
       },
-      { name: "og:title", content: "Phillip Kent Knight - Campaign Tech" },
+      { name: "og:title", content: "Phillip Kent Knight - Campaign Technologist" },
       {
         name: "og:description",
         content:
-          "I'm a digital tech professional working for progressive campaigns and nonprofit organizations, and this is my website"
+          "Building digital products for progress."
       },
-      { name: "og:url", content: "https://phillipknight.github.io" }
+      { name: "og:url", content: "https://phillipkentknight.com" }
     ]
   }
 };
