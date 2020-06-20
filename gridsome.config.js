@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Phillip Kent Knight',
-  siteUrl: 'https://phillipknight.github.io',
+  siteUrl: 'https://www.phillipkentknight.com',
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
