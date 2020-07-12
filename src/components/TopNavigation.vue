@@ -3,7 +3,7 @@
     <g-link class="nav__link" to="/">Hello</g-link>
     <g-link class="nav__link" to="/about">About</g-link>
 <!--    <g-link class="nav-link" to="/blog">Blog</g-link> -->
-<!-- HIDE THEME TOGGLE   <toggle-theme></toggle-theme> -->
+ <toggle-theme></toggle-theme> 
   </nav>
 </template>
 <script>

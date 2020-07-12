@@ -85,16 +85,7 @@ export default {
   flex-direction: column;
 }
 
-.full-screen {
-  height: calc(100vh - 3rem);
-  min-height: fit-content;
-  /* SAVE IMAGE STYLE FOR LATER
-  background: url(~@/images/beard.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left; */
-  background: var(--navy);
-}
+
 
 .intro-grid__column.pics {
   display: flex;
@@ -132,7 +123,7 @@ export default {
 }
 
 .intro__headline-word:nth-child(1) {
-  color: white;
+  color: var(--body-color);
 }
 .intro__headline-word:nth-child(2) {
   color: var(--pink);

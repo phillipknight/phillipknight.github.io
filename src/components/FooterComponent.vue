@@ -6,6 +6,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
+          title="LinkedIn (new tab)"
           :href="'https://linkedin.com/in/' + linkedinID"
         >
           <svg
@@ -29,6 +30,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
+          title="Dev.to (new tab)"
           :href="'https://dev.to/' + devID"
         >
           <svg
@@ -52,6 +54,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
+          title="Instagram (new tab)"
           :href="'https://instagram.com/' + instagramID"
         >
           <svg
@@ -75,6 +78,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
+          title="Facebook Messenger (new tab)"
           :href="'https://messenger.com/t/' + facebookID"
         >
           <svg
@@ -98,6 +102,7 @@
           class="social-links__link"
           target="_blank"
           rel="noopener"
+          title="Twitter (new tab)"
           :href="'https://twitter.com/'+ twitterID"
         >
           <svg

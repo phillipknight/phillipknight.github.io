@@ -33,11 +33,9 @@ query {
 
 /* default mode body styles */
 body {
-
   --navy: #021a25;
-  --pink: #DB73A0; 
-  --mint:#2BA25B;
-
+  --pink: #db73a0;
+  --mint: #2ba25b;
 
   /* header components */
 
@@ -48,38 +46,36 @@ body {
   --nav-active: #fff;
   --nav-bottom-hover: var(--pink);
 
+  --body-bg: white;
+  --body-color: var(--navy);
+  --accent: var(--pink);
 
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background: var(--navy);
-  color: var(--color-alpha);
+  background: var(--body-bg);
+  color: var(--body-color);
 
   --link: var(--mint);
 }
 /* dark mode */
 body[data-theme="dark"] {
+  --body-bg: var(--navy);
+  --body-color: white;
 
-
-
-
-
-    --link: var(--mint);
-
+  --link: var(--mint);
 }
 
 h2,
 h3 {
-  color: var(--main-color);
+  color: var(--body-color);
 }
 
 a {
   color: var(--link);
   text-decoration-style: dashed;
 }
-
-
 
 .button {
   border: 1px solid var(--link);
@@ -100,6 +96,5 @@ a {
 
 img {
   max-width: 100%;
-  
 }
 </style>
