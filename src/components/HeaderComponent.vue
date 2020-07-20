@@ -45,7 +45,7 @@ export default {
   max-width: 100%;
   height: 3rem;
   font-family: sans-serif;
-  background-color: white;
+  color: white;
   background-color: var(--nav-bg);
   z-index: 9999;
 }

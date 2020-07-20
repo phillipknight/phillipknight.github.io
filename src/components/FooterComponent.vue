@@ -151,7 +151,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 3rem;
+  height: 100%;
   margin-top: 4rem;
 }
 .social-links {
@@ -166,6 +166,7 @@ export default {
 .social-links__link {
   font-weight: bold;
   color: var(--nav-link);
+  display:flex;
 }
 
 .social-links li {
@@ -177,6 +178,9 @@ export default {
 }
 .social-links__link svg {
   width: 2rem;
+}
+
+.social-links__link svg path {
   fill: var(--nav-link);
 }
 </style>

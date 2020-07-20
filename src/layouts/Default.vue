@@ -45,7 +45,7 @@ body {
   --nav-focus: var(--pink);
   --nav-active: #fff;
   --nav-bottom-hover: var(--pink);
-
+  --nav-link:white;
   --body-bg: white;
   --body-color: var(--navy);
   --accent: var(--pink);
