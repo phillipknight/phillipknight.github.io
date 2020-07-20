@@ -25,7 +25,7 @@
       <div class="intro__text">
         <h2
           class
-        >A campaigner turned technologist; I build and manage projects, products, and platforms with purpose.</h2>
+        >A campaigner turned technologist; I build and manage products with purpose.</h2>
         <g-link to="/about">
           Learn more about my work
           <svg
