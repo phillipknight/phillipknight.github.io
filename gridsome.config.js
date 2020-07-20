@@ -7,12 +7,5 @@
 module.exports = {
   siteName: 'Phillip Kent Knight',
   siteUrl: 'https://phillipkentknight.com',
-  plugins: [
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-107681719-3'
-      }
-    }
-  ]
+  plugins: []
 }
