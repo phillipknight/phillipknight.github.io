@@ -45,7 +45,7 @@ body {
   --nav-focus: var(--pink);
   --nav-active: #fff;
   --nav-bottom-hover: var(--pink);
-  --nav-link:white;
+  --nav-link: white;
   --body-bg: white;
   --body-color: var(--navy);
   --accent: var(--pink);
@@ -63,7 +63,6 @@ body {
 body[data-theme="dark"] {
   --body-bg: var(--navy);
   --body-color: white;
-
   --link: var(--mint);
 }
 
@@ -74,7 +73,6 @@ h3 {
 
 a {
   color: var(--link);
-  text-decoration-style: dashed;
 }
 
 .button {
