@@ -15,7 +15,7 @@
             data-prefix="fab"
             data-icon="linkedin"
             role="img"
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -39,7 +39,7 @@
             data-prefix="fab"
             data-icon="dev"
             role="img"
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -63,7 +63,7 @@
             data-prefix="fab"
             data-icon="instagram-square"
             role="img"
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -82,7 +82,7 @@
           :href="'https://messenger.com/t/' + facebookID"
         >
           <svg
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 333333 333333"
             shape-rendering="geometricPrecision"
             text-rendering="geometricPrecision"
@@ -103,7 +103,7 @@
           target="_blank"
           rel="noopener"
           title="Twitter (new tab)"
-          :href="'https://twitter.com/'+ twitterID"
+          :href="'https://twitter.com/' + twitterID"
         >
           <svg
             aria-hidden="true"
@@ -111,7 +111,7 @@
             data-prefix="fab"
             data-icon="twitter-square"
             role="img"
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -141,8 +141,8 @@ export default {
     linkedinID: String,
     instagramID: String,
     facebookID: String,
-    devID: String
-  }
+    devID: String,
+  },
 };
 </script>
 <style>
@@ -157,7 +157,7 @@ export default {
 .social-links {
   display: flex;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
   padding: 0;
   margin: 0.5rem;
   list-style: none;
@@ -166,11 +166,11 @@ export default {
 .social-links__link {
   font-weight: bold;
   color: var(--nav-link);
-  display:flex;
+  display: flex;
 }
 
 .social-links li {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .social-links li:last-child {
