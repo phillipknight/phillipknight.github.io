@@ -73,6 +73,7 @@ h3 {
 
 a {
   color: var(--link);
+  text-decoration-style: dashed;
 }
 
 .button {

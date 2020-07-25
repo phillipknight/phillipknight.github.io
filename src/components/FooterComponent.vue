@@ -15,7 +15,7 @@
             data-prefix="fab"
             data-icon="linkedin"
             role="img"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -39,7 +39,7 @@
             data-prefix="fab"
             data-icon="dev"
             role="img"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -63,7 +63,7 @@
             data-prefix="fab"
             data-icon="instagram-square"
             role="img"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
@@ -82,7 +82,7 @@
           :href="'https://messenger.com/t/' + facebookID"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             viewBox="0 0 333333 333333"
             shape-rendering="geometricPrecision"
             text-rendering="geometricPrecision"
@@ -111,7 +111,7 @@
             data-prefix="fab"
             data-icon="twitter-square"
             role="img"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path
