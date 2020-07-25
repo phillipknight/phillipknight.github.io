@@ -17,15 +17,22 @@
     </section>
 
     <section class="experience">
-                             <div class="image-container"><h2 class="experience-headline">Experience</h2><g-image src="~/images/bowling-comp.gif" alt="Animated gif, Phil bowls a strike and dances shamelessly" width="350" fit="cover" /></div> 
+      <div class="image-container">
+        <h2 class="experience-headline">Experience</h2>
+        <g-image
+          src="~/images/bowling-comp.gif"
+          alt="Animated gif, Phil bowls a strike and dances shamelessly"
+          width="350"
+          fit="cover"
+        />
+      </div>
 
-      
       <div class="experience-container">
         <div class="pro-experience">
-          <div class="experience-item">
+          <div class="pro-experience_item">
             <h3 class>Languages & Frameworks I've interacted with</h3>
 
-            <ul class>
+            <ul class="inline-list">
               <li>HTML/CSS</li>
               <li>Javascript</li>
               <li>Vue.js</li>
@@ -39,9 +46,9 @@
             </ul>
           </div>
 
-          <div class="experience-item">
+          <div class="pro-experience_item">
             <h3 class>Platforms & APIs I know</h3>
-            <ul class>
+            <ul class="inline-list">
               <li>ActionKit</li>
               <li>NationBuilder</li>
               <li>NGP/VAN</li>
@@ -54,9 +61,9 @@
               <li>Google Analytics</li>
             </ul>
           </div>
-          <div class="experience-item">
+          <div class="pro-experience_item">
             <h3 class>Campaigns & Issues I've worked on</h3>
-            <ul class>
+            <ul class="inline-list">
               <li>US Senate</li>
               <li>State Legislatures</li>
               <li>Municipal & Local</li>
@@ -68,48 +75,47 @@
           </div>
         </div>
         <div>
-          
           <div class="experience-item">
             <h3 class>Notable Accomplishments</h3>
             <ul class>
-              <li>Built first known single-page NationBuilder site.</li>
-              <li>Bartered with Union bosses for phone bank time.</li>
-              <li>Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
-              <li>Was once contracted with express goal of annoying a US Senator.</li>
-              <li>Explained "The Cloud" to an entire marketing department.</li>
+              <li class="technologist">Built first known single-page NationBuilder site.</li>
+              <li class="telephone">Bartered with Union bosses for phone bank time.</li>
+              <li class="suit">Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
+              <li class="megaphone">Was once contracted with express instructions to annoy a US Senator.</li>
+              <li class="speaker">Successfully explained "The Cloud" to an entire marketing department.</li>
             </ul>
           </div>
           <div class="experience-item">
             <h3 class>Non-professional points of interest</h3>
             <ul class>
-              <li>1 Kickball win</li>
-              <li>1 Bowling win</li>
-              <li>Once made the best chocolate cake ever</li>
-              <li>Semi-successful Semi-organic Gardener</li>
-              <li>Rode 545 miles on a bicycle in 7 days</li>
-              <li>Licensed General Class Amateur ("Ham") Radio Operator</li>
-
+              <li class="shoe">1 Kickball win</li>
+              <li class="bowling">1 Bowling win</li>
+              <li class="cake">Once made the best chocolate cake ever</li>
+              <li class="farmer">Semi-successful Semi-organic Gardener</li>
+              <li class="cyclist">Rode 545 miles on a bicycle in 7 days</li>
+              <li class="mic">Licensed General Class Amateur ("Ham") Radio Operator</li>
             </ul>
           </div>
-
         </div>
       </div>
-
     </section>
-<section class="experience-links">
-            <div>
-            <a href="https://www.linkedin.com/in/phillipkentknight" target="_blank" title="my linkedin profile, opens in new tab">Connect with me on LinkedIn</a>
-          </div>
-
-</section>
+    <section class="experience-links">
+      <div>
+        <a
+          href="https://www.linkedin.com/in/phillipkentknight"
+          target="_blank"
+          title="my linkedin profile, opens in new tab"
+        >Connect with me on LinkedIn</a>
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "About me"
-  }
+    title: "About me",
+  },
 };
 </script>
 
@@ -134,15 +140,58 @@ export default {
   padding: 0 1rem;
 }
 
-.experience-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+.experience-headline {
+  color: var(--pink);
 }
 
-.experience-headline {
-  color:var(--pink);
+.inline-list {
+  padding: 0;
+}
+.inline-list li {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  display: inline-block;
+  line-height: 1.2;
+  border: 1px solid #db73a017;
+}
+
+.pro-experience_item {
+  margin-bottom: 2rem;
+}
+
+
+li.technologist {
+  list-style-type: ' 👨‍💻 ';
+}
+li.telephone {
+  list-style-type: ' ☎️ ';
+}
+li.suit {
+  list-style-type: ' 👔 ';
+}
+li.megaphone {
+  list-style-type: ' 📢 ';
+}
+li.speaker {
+  list-style-type: ' 🗣️ ';
+}
+li.shoe {
+  list-style-type: " 👟 ";
+}
+li.bowling {
+  list-style-type: " 🎳 ";
+}
+li.cake {
+  list-style-type:" 🎂 ";
+}
+li.farmer {
+  list-style-type:" 👨‍🌾 ";
+}
+li.cyclist {
+  list-style-type:" 🚴 ";
+}
+li.mic {
+  list-style-type:" 🎙️ ";
 }
 
 .image-container {
@@ -156,8 +205,7 @@ export default {
 
 .experience-links {
   text-align: center;
-    font-size: 1.8rem;
-    padding: 3rem 1rem;
-
+  font-size: 1.8rem;
+  padding: 3rem 1rem;
 }
 </style>

@@ -68,12 +68,11 @@ body[data-theme="dark"] {
 
 h2,
 h3 {
-  color: var(--body-color);
+  color: var(--accent);
 }
 
 a {
   color: var(--link);
-  text-decoration-style: dashed;
 }
 
 .button {
