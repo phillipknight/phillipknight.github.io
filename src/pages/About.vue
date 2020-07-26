@@ -120,9 +120,23 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "About me",
-  },
+   metaInfo: {
+    title: "About me and my work",
+    meta: [
+      {
+        name: "description",
+        content:
+          "I'm a product manager and campaign technologist with a background in campaign organizing. Learn more about my work.  "
+      },
+      { name: "og:title", content: "Phillip Kent Knight - Campaign Technologist & Product Manager" },
+      {
+        name: "og:description",
+        content:
+          "Building digital products for progress."
+      },
+      { name: "og:url", content: "https://phillipkentknight.com" }
+    ]
+  }
 };
 </script>
 

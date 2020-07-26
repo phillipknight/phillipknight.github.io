@@ -61,7 +61,7 @@ export default {
       {
         name: "description",
         content:
-          "Building digital products for progress."
+          "A former campaign organizer turned digital technologist, now working as a product manager for innovative nonprofit organiations and advocacy campaigns."
       },
       { name: "og:title", content: "Phillip Kent Knight - Campaign Technologist & Product Manager" },
       {
