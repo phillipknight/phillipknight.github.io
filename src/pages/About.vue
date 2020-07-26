@@ -121,6 +121,7 @@ export default {
 
 
 <style>
+
 .about-intro-section {
   min-height: 100vh;
   display: flex;

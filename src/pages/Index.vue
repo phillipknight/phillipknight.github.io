@@ -23,14 +23,12 @@
     </section>
     <section class="intro-text-section">
       <div class="intro__text">
-        <h2
-          class
-        >A campaigner turned technologist; I build and manage products with purpose.</h2>
+        <h2>A campaigner turned technologist; I build and manage products with purpose.</h2>
         <g-link to="/about">
           Learn more about my work
           <svg
           aria-hidden="true"
-            xmlns="https://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
             width="64"
             height="64"
             viewBox="0 0 640 640"
@@ -141,6 +139,9 @@ export default {
 .intro__text {
   text-align: left;
   padding: 0 3rem;
+}
+.intro__text h2 {
+  color: var(--body-color);
 }
 
 .intro__text a {
