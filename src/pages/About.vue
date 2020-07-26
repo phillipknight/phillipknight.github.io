@@ -110,7 +110,7 @@
       <div>
         <a
           href="https://www.linkedin.com/in/phillipkentknight"
-          target="_blank"
+          target="_blank" rel="noreferrer"
           title="my linkedin profile, opens in new tab"
         >Connect with me on LinkedIn</a>
       </div>
