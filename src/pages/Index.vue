@@ -63,7 +63,7 @@ export default {
         content:
           "Building digital products for progress."
       },
-      { name: "og:title", content: "Phillip Kent Knight - Campaign Technologist" },
+      { name: "og:title", content: "Phillip Kent Knight - Campaign Technologist & Product Manager" },
       {
         name: "og:description",
         content:

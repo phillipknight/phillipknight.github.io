@@ -93,7 +93,7 @@
               <li class="cake">Once made the best chocolate cake ever</li>
               <li class="farmer">Semi-successful Semi-organic Gardener</li>
               <li class="cyclist">Rode 545 miles on a bicycle in 7 days</li>
-              <li class="mic">Licensed General Class Amateur ("Ham") Radio Operator</li>
+              <li class="mic">Licensed General Class Amateur Radio Operator</li>
             </ul>
           </div>
         </div>
