@@ -20,6 +20,7 @@
       <div class="image-container">
         <h2 class="experience-headline">Experience</h2>
         <g-image
+          class="experience-image"
           src="~/images/bowling-comp.gif"
           alt="Animated gif, Phil bowls a strike and dances shamelessly"
           width="350"
@@ -80,9 +81,15 @@
             <ul class>
               <li class="technologist">Built first known single-page NationBuilder site.</li>
               <li class="telephone">Bartered with Union bosses for phone bank time.</li>
-              <li class="suit">Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
-              <li class="megaphone">Was once contracted with express instructions to annoy a US Senator.</li>
-              <li class="speaker">Successfully explained "The Cloud" to an entire marketing department.</li>
+              <li
+                class="suit"
+              >Sent four elected officials door-knocking when OFA absorbed entire volunteer pool.</li>
+              <li
+                class="megaphone"
+              >Was once contracted with express instructions to annoy a US Senator.</li>
+              <li
+                class="speaker"
+              >Successfully explained "The Cloud" to an entire marketing department.</li>
             </ul>
           </div>
           <div class="experience-item">
@@ -121,7 +128,6 @@ export default {
 
 
 <style>
-
 .about-intro-section {
   min-height: 100vh;
   display: flex;
@@ -137,12 +143,16 @@ export default {
   color: var(--pink);
 }
 
-.experience {
-  padding: 0 1rem;
-}
-
 .experience-headline {
   color: var(--pink);
+}
+
+.experience-image {
+  justify-self: end;
+}
+
+.experience-container {
+  padding: 10%;
 }
 
 .inline-list {
@@ -160,21 +170,20 @@ export default {
   margin-bottom: 2rem;
 }
 
-
 li.technologist {
-  list-style-type: ' 👨‍💻 ';
+  list-style-type: " 👨‍💻 ";
 }
 li.telephone {
-  list-style-type: ' ☎️ ';
+  list-style-type: " ☎️ ";
 }
 li.suit {
-  list-style-type: ' 👔 ';
+  list-style-type: " 👔 ";
 }
 li.megaphone {
-  list-style-type: ' 📢 ';
+  list-style-type: " 📢 ";
 }
 li.speaker {
-  list-style-type: ' 🗣️ ';
+  list-style-type: " 🗣️ ";
 }
 li.shoe {
   list-style-type: " 👟 ";
@@ -183,25 +192,35 @@ li.bowling {
   list-style-type: " 🎳 ";
 }
 li.cake {
-  list-style-type:" 🎂 ";
+  list-style-type: " 🎂 ";
 }
 li.farmer {
-  list-style-type:" 👨‍🌾 ";
+  list-style-type: " 👨‍🌾 ";
 }
 li.cyclist {
-  list-style-type:" 🚴 ";
+  list-style-type: " 🚴 ";
 }
 li.mic {
-  list-style-type:" 🎙️ ";
+  list-style-type: " 🎙️ ";
 }
 
 .image-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--accent);
 }
-.image-container * {
-  max-width: 50%;
+.image-container h2 {
+  padding: 0 10vw;
+  font-size: clamp(1.5rem, 7vw, 3rem);
+  color: var(--body-bg);
+}
+.image-container img {
+  width: 100%;
+  max-width: 280px;
 }
 
 .experience-links {
