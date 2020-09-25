@@ -115,6 +115,7 @@
         >Connect with me on LinkedIn</a>
       </div>
     </section>
+
   </Layout>
 </template>
 

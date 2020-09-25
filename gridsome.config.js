@@ -7,5 +7,23 @@
 module.exports = {
   siteName: 'Phillip Kent Knight',
   siteUrl: 'https://phillipkentknight.com',
-  plugins: []
+  plugins: [
+    {
+      use: "gridsome-source-google-sheets-v2",
+      options: {
+        apiKey: process.env.GS_API_KEY,
+        spreadsheets: [
+          {
+            spreadsheetId: process.env.SPREADSHEET_CV,
+            sheets: [
+              {
+                sheetName: "workhistory",
+                collectionName: "WorkHistory"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
