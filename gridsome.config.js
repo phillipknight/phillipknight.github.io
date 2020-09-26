@@ -24,6 +24,22 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      use: 'gridsome-source-sanity',
+      options: {
+        projectId: '06a82jqg',
+        dataset: 'blog',
+        // Token is only required if dataset is private
+        // or `overlayDrafts` is set to true
+        token: process.env.SANITYBLOG,
+        overlayDrafts: false,
+        watchMode: false,
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default'
+      }
     }
   ]
 }
